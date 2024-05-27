@@ -34,9 +34,8 @@ class Post extends Model implements Explored
         return [
             'id' => 'keyword',
             'title' => [
-                'type' => 'text',
+                'type' => 'full_text',
                 'analyzer' => 'synonym',
-                'fuziness' => 'auto',
             ],
         ];
     }
