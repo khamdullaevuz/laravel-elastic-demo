@@ -17,6 +17,10 @@ class Post extends Model implements Explored
         'content'
     ];
 
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:i:s',
+    ];
+
     public function toSearchableArray(): array
     {
         return [
