@@ -36,12 +36,9 @@ php artisan scout:import "App\Models\Post"
 ```bash
 php artisan serve
 ```
-### Open the browser and navigate to `http://localhost:8000`
+### Open the browser and navigate to
+http://localhost:8000
 ### Search for posts
-```bash
 http://localhost:8000/api/posts?q=lorem
-```
 ### Open kibana
-```bash
 http://localhost:5601
-```
