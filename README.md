@@ -20,6 +20,10 @@ php artisan key:generate
 ```bash
 php artisan migrate --seed
 ```
+### Run elasticsearch and kibana
+```bash
+docker-compose up -d
+```
 ### Create index with scout
 ```bash
 php artisan scout:index posts
@@ -28,4 +32,16 @@ php artisan scout:index posts
 ```bash
 php artisan scout:import "App\Models\Post"
 ```
-
+### Application is ready to use
+```bash
+php artisan serve
+```
+### Open the browser and navigate to `http://localhost:8000`
+### Search for posts
+```bash
+http://localhost:8000/api/posts?q=lorem
+```
+### Open kibana
+```bash
+http://localhost:5601
+```
